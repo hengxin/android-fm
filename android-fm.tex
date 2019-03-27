@@ -1,0 +1,121 @@
+\documentclass[]{beamer}
+
+\input{preamble}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\title[Android + 形式化方法 = ?]{Android + 形式化方法 = ?}
+\subtitle{}
+
+\author[黄宇\; 魏恒峰]{黄宇 \quad 魏恒峰}
+\titlegraphic{\includegraphics[height = 1.3cm]{figs/nju-logo-purple}~\includegraphics[height = 1.3cm]{figs/cs-logo}}
+\institute{南京大学计算机软件研究所}
+% \date{\zhtoday}
+\date{2019年03月28日}
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\renewcommand\figurename{} % no ``图''
+\renewcommand\tablename{}  % no ``表''
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{}
+%   \fignocaption{width = 0.60\textwidth}{figs/code-correctness}
+% \end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.60\textwidth}{figs/fm-cloudtag}
+
+  \vspace{0.30cm}
+  \begin{center}
+	{\Large 用\hl{yellow}{``逻辑''}的方法保证系统的正确性}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{columns}
+	\column{0.50\textwidth}
+	  \fignocaption{width = 0.80\textwidth}{figs/distributed-computing}
+	\column{0.50\textwidth}
+	  \fignocaption{width = 0.80\textwidth}{figs/fm-cloudtag}
+  \end{columns}
+
+  \vspace{0.30cm}
+  \begin{center}
+	{\Large 用``逻辑''的方法保证\hl{yellow}{分布式协议}的正确性}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{center}
+    {\large 
+	  模型检验\lgray{/定理证明}: 使用 TLA+\lgray{/TLAPS} \\[5pt]
+    }
+  \end{center}
+
+  \begin{columns}
+    \column{0.50\textwidth}
+      \fignocaption{width = 0.50\textwidth}{figs/lamport}
+    \column{0.50\textwidth}
+      \fignocaption{width = 0.60\textwidth}{figs/tlaplus}
+  \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{center}
+	\href{https://github.com/Disalg-ICS-NJU/tlaplus-lamport-projects}{\blue{\underline{\large TLA+小组: Disalg-ICS-NJU/tlaplus-projects@github}}} \\[1.5cm] \pause
+
+	\href{https://github.com/hengxin/jupiter-refinement-project}{\purple{\underline{Jupiter: 验证协同编辑应用核心协议的正确性}}} \\[1cm]
+
+	\href{https://github.com/Starydark/Xingchen/tree/master/Archive/Spec}{\purple{\underline{TPaxos: 验证腾讯所发表的Consensus协议的正确性}}} \\[1cm]
+
+	\href{https://github.com/hengxin/nju-bachelor/tree/master/2019-ZhifuWang/code}{\purple{\underline{CRDT: 验证分布式数据结构的正确性}}}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.40\textwidth}{figs/aws}
+
+  \begin{columns}
+    \column{0.50\textwidth}
+      \fignocaption{width = 0.70\textwidth}{figs/aws-tla-cacm}
+    \column{0.50\textwidth}
+      \fignocaption{width = 0.70\textwidth}{figs/amazon-tla}
+  \end{columns}
+
+  \begin{center}
+	\blue{``Engineers use TLA+ to prevent serious but subtle bugs \\ from reaching production.''}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{columns}
+    \column{0.40\textwidth}
+      \fignocaption{width = 0.60\textwidth}{figs/android}
+    \column{0.25\textwidth}
+      \fignocaption{width = 0.50\textwidth}{figs/plus}
+    \column{0.40\textwidth}
+      \fignocaption{width = 0.90\textwidth}{figs/fm-cloudtag}
+  \end{columns}
+
+  \begin{center}
+	{\Huge 挑战与机遇}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+\thankyou{}
+
+\end{document}
